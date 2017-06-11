@@ -1,0 +1,4 @@
+﻿1>------ Rebuild All started: Project: CYRM_Administrator, Configuration: Debug Any CPU ------
+1>C:\Users\Marvic\documents\visual studio 2015\Projects\CYRM_Administrator\CYRM_Administrator\rptMarcajes.rdlc : warning rsOverlappingReportItems: The image ‘Logo’ and the text box ‘ExecutionTime’ overlap. Overlapping report items are not supported in all renderers.
+1>  CYRM_Administrator -> C:\Users\Marvic\documents\visual studio 2015\Projects\CYRM_Administrator\CYRM_Administrator\bin\Debug\CYRM_Administrator.exe
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
