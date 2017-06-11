@@ -109,7 +109,8 @@ Partial Class frmExpImpData
         '
         'btnCerrar
         '
-        Me.btnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnCerrar.BackColor = System.Drawing.Color.Red
+        Me.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnCerrar.Location = New System.Drawing.Point(364, 8)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(75, 23)
@@ -119,7 +120,8 @@ Partial Class frmExpImpData
         '
         'btnBuscar
         '
-        Me.btnBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnBuscar.BackColor = System.Drawing.Color.Lime
+        Me.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnBuscar.Location = New System.Drawing.Point(283, 8)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
