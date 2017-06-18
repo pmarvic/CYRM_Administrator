@@ -67,12 +67,7 @@
     End Sub
 
     Private Sub RegistrosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrosToolStripMenuItem.Click
-        Dim oExporImpor As New frmExpImpData
-        If oExport Then
-            oExporImpor.ShowDialog()
-        Else
-            MsgBox("Requiere Autorizacion", vbOKOnly + vbInformation, "Administrador")
-        End If
+
     End Sub
     Public Sub Permisos(pReport As String, pExport As String, pAdmin As String)
         oReport = IIf(pReport = True, True, False)
@@ -84,6 +79,33 @@
         Dim oSegurity As New frmSeguridad
         If oAdmin Then
             oSegurity.ShowDialog()
+        Else
+            MsgBox("Requiere Autorizacion", vbOKOnly + vbInformation, "Administrador")
+        End If
+    End Sub
+
+    Private Sub ExportarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExportarToolStripMenuItem.Click
+        Dim oExporImpor As New frmExpImpData
+        If oExport Then
+            oExporImpor.ShowDialog()
+        Else
+            MsgBox("Requiere Autorizacion", vbOKOnly + vbInformation, "Administrador")
+        End If
+    End Sub
+
+    Private Sub ImportarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImportarToolStripMenuItem.Click
+        Dim oExporImpor As New frmImMarcaje
+        If oExport Then
+            oExporImpor.ShowDialog()
+        Else
+            MsgBox("Requiere Autorizacion", vbOKOnly + vbInformation, "Administrador")
+        End If
+    End Sub
+
+    Private Sub NovedadesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NovedadesToolStripMenuItem.Click
+        Dim oNovedades As New frmRegAusencia
+        If oAdmin Then
+            oNovedades.ShowDialog()
         Else
             MsgBox("Requiere Autorizacion", vbOKOnly + vbInformation, "Administrador")
         End If

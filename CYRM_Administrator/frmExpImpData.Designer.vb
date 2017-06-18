@@ -51,17 +51,18 @@ Partial Class frmExpImpData
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(455, 50)
+        Me.Panel1.Size = New System.Drawing.Size(550, 50)
         Me.Panel1.TabIndex = 0
         '
         'btnExportar
         '
-        Me.btnExportar.Location = New System.Drawing.Point(364, 9)
+        Me.btnExportar.BackColor = System.Drawing.Color.Gold
+        Me.btnExportar.Location = New System.Drawing.Point(463, 13)
         Me.btnExportar.Name = "btnExportar"
         Me.btnExportar.Size = New System.Drawing.Size(75, 23)
         Me.btnExportar.TabIndex = 11
         Me.btnExportar.Text = "&Exportar"
-        Me.btnExportar.UseVisualStyleBackColor = True
+        Me.btnExportar.UseVisualStyleBackColor = False
         '
         'dtpFechaFin
         '
@@ -104,14 +105,14 @@ Partial Class frmExpImpData
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(0, 369)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(455, 43)
+        Me.Panel2.Size = New System.Drawing.Size(550, 43)
         Me.Panel2.TabIndex = 1
         '
         'btnCerrar
         '
-        Me.btnCerrar.BackColor = System.Drawing.Color.Red
+        Me.btnCerrar.BackColor = System.Drawing.Color.LightCoral
         Me.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnCerrar.Location = New System.Drawing.Point(364, 8)
+        Me.btnCerrar.Location = New System.Drawing.Point(465, 8)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(75, 23)
         Me.btnCerrar.TabIndex = 4
@@ -120,9 +121,9 @@ Partial Class frmExpImpData
         '
         'btnBuscar
         '
-        Me.btnBuscar.BackColor = System.Drawing.Color.Lime
+        Me.btnBuscar.BackColor = System.Drawing.Color.GreenYellow
         Me.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnBuscar.Location = New System.Drawing.Point(283, 8)
+        Me.btnBuscar.Location = New System.Drawing.Point(384, 8)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.btnBuscar.TabIndex = 3
@@ -135,7 +136,7 @@ Partial Class frmExpImpData
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 50)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(455, 319)
+        Me.Panel3.Size = New System.Drawing.Size(550, 319)
         Me.Panel3.TabIndex = 2
         '
         'dgvData
@@ -146,7 +147,7 @@ Partial Class frmExpImpData
         Me.dgvData.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvData.Location = New System.Drawing.Point(0, 0)
         Me.dgvData.Name = "dgvData"
-        Me.dgvData.Size = New System.Drawing.Size(455, 319)
+        Me.dgvData.Size = New System.Drawing.Size(550, 319)
         Me.dgvData.TabIndex = 0
         '
         'OpenFileDialog1
@@ -157,7 +158,7 @@ Partial Class frmExpImpData
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(455, 412)
+        Me.ClientSize = New System.Drawing.Size(550, 412)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)

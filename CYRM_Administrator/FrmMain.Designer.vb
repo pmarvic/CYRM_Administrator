@@ -37,6 +37,9 @@ Partial Class frmMain
         Me.MantenimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SeguridadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImportarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExportarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NovedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -111,7 +114,7 @@ Partial Class frmMain
         '
         'MantenimientoToolStripMenuItem
         '
-        Me.MantenimientoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SeguridadToolStripMenuItem, Me.RegistrosToolStripMenuItem})
+        Me.MantenimientoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SeguridadToolStripMenuItem, Me.RegistrosToolStripMenuItem, Me.NovedadesToolStripMenuItem})
         Me.MantenimientoToolStripMenuItem.Name = "MantenimientoToolStripMenuItem"
         Me.MantenimientoToolStripMenuItem.Size = New System.Drawing.Size(101, 20)
         Me.MantenimientoToolStripMenuItem.Text = "Mantenimiento"
@@ -124,9 +127,28 @@ Partial Class frmMain
         '
         'RegistrosToolStripMenuItem
         '
+        Me.RegistrosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportarToolStripMenuItem, Me.ExportarToolStripMenuItem})
         Me.RegistrosToolStripMenuItem.Name = "RegistrosToolStripMenuItem"
         Me.RegistrosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.RegistrosToolStripMenuItem.Text = "Registros"
+        '
+        'ImportarToolStripMenuItem
+        '
+        Me.ImportarToolStripMenuItem.Name = "ImportarToolStripMenuItem"
+        Me.ImportarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ImportarToolStripMenuItem.Text = "Importar"
+        '
+        'ExportarToolStripMenuItem
+        '
+        Me.ExportarToolStripMenuItem.Name = "ExportarToolStripMenuItem"
+        Me.ExportarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExportarToolStripMenuItem.Text = "Exportar"
+        '
+        'NovedadesToolStripMenuItem
+        '
+        Me.NovedadesToolStripMenuItem.Name = "NovedadesToolStripMenuItem"
+        Me.NovedadesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NovedadesToolStripMenuItem.Text = "Novedades"
         '
         'frmMain
         '
@@ -163,4 +185,7 @@ Partial Class frmMain
     Friend WithEvents MantenimientoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SeguridadToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RegistrosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ImportarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExportarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NovedadesToolStripMenuItem As ToolStripMenuItem
 End Class

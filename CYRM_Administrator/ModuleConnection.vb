@@ -33,9 +33,25 @@ Module ModuleConnection
             cmd.ExecuteNonQuery()
             cmd.Dispose()
             connection.Close()
-            MsgBox("La Informacion ha sido Actualizada")
+            ' MsgBox("La Informacion ha sido Actualizada")
         Catch ex As Exception
             MsgBox("Fallo cuando se intento Actualizar Data")
+
+        End Try
+    End Sub
+    Public Sub RunInsert(ByVal sql As String)
+        Dim cmd As New MySqlCommand
+        conn()
+        Try
+            cmd.Connection = connection
+            cmd.CommandType = Data.CommandType.Text
+            cmd.CommandText = sql
+            cmd.ExecuteNonQuery()
+            cmd.Dispose()
+            connection.Close()
+            ' MsgBox("La Informacion ha sido Actualizada")
+        Catch ex As Exception
+            MsgBox("Error Registro ya Existe")
 
         End Try
     End Sub
