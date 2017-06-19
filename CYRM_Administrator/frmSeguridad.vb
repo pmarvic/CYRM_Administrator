@@ -21,7 +21,9 @@ Public Class frmSeguridad
         sql = sql & " usuarios.pass as Contraseña ,"
         sql = sql & " usuarios.report as Reportes,"
         sql = sql & " usuarios.exportar as Exportar,"
-        sql = sql & " usuarios.admin as Administrar "
+        sql = sql & " usuarios.admin as Administrar,"
+        sql = sql & " usuarios.importar as Importar ,"
+        sql = sql & " usuarios.novedad as Novedad "
         sql = sql & " FROM usuarios "
 
         da = New MySqlDataAdapter(sql, connection)
@@ -43,6 +45,8 @@ Public Class frmSeguridad
         Dim clave As String
         Dim Report As String
         Dim Export As String
+        Dim Import As String
+        Dim Novedad As String
         Dim Admin As String
 
         Dim SqlUpdate As String
@@ -54,6 +58,8 @@ Public Class frmSeguridad
         Clave = dgvSeguridad(1, row).Value
         Report = dgvSeguridad(2, row).Value
         Export = dgvSeguridad(3, row).Value
+        Import = dgvSeguridad(3, row).Value
+        Novedad = dgvSeguridad(3, row).Value
         Admin = dgvSeguridad(4, row).Value
         ' Update Sql
 
@@ -61,7 +67,9 @@ Public Class frmSeguridad
         SqlUpdate = SqlUpdate & " pass = '" & clave & "',"
         SqlUpdate = SqlUpdate & " report = '" & Report & "',"
         SqlUpdate = SqlUpdate & " exportar = '" & Export & "',"
-        SqlUpdate = SqlUpdate & " admin = '" & Admin & "'"
+        SqlUpdate = SqlUpdate & " admin = '" & Admin & "',"
+        SqlUpdate = SqlUpdate & " importar = '" & Import & "',"
+        SqlUpdate = SqlUpdate & " novedad = '" & Novedad & "'"
         SqlUpdate = SqlUpdate & " WHERE  user = '" & codigo & "'"
         RunSql(SqlUpdate)
         LoadUsuarios()

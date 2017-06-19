@@ -25,6 +25,7 @@ Partial Class frmRegAusencia
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.chbJustifica = New System.Windows.Forms.CheckBox()
         Me.txtObservacion = New System.Windows.Forms.TextBox()
+        Me.btnAgregar = New System.Windows.Forms.Button()
         Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -33,12 +34,11 @@ Partial Class frmRegAusencia
         Me.cmbMotivo = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpFechaIna = New System.Windows.Forms.DateTimePicker()
-        Me.btnAgregar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnGrabar = New System.Windows.Forms.Button()
+        Me.btnCerrar = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.dgvInacistencia = New System.Windows.Forms.DataGridView()
-        Me.btnCerrar = New System.Windows.Forms.Button()
-        Me.btnGrabar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -81,6 +81,16 @@ Partial Class frmRegAusencia
         Me.txtObservacion.Name = "txtObservacion"
         Me.txtObservacion.Size = New System.Drawing.Size(524, 74)
         Me.txtObservacion.TabIndex = 6
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.BackColor = System.Drawing.Color.Yellow
+        Me.btnAgregar.Location = New System.Drawing.Point(581, 113)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(75, 28)
+        Me.btnAgregar.TabIndex = 0
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = False
         '
         'txtCedula
         '
@@ -149,16 +159,6 @@ Partial Class frmRegAusencia
         Me.dtpFechaIna.Size = New System.Drawing.Size(200, 20)
         Me.dtpFechaIna.TabIndex = 1
         '
-        'btnAgregar
-        '
-        Me.btnAgregar.BackColor = System.Drawing.Color.Yellow
-        Me.btnAgregar.Location = New System.Drawing.Point(581, 113)
-        Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(75, 28)
-        Me.btnAgregar.TabIndex = 0
-        Me.btnAgregar.Text = "Agregar"
-        Me.btnAgregar.UseVisualStyleBackColor = False
-        '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.btnGrabar)
@@ -168,6 +168,26 @@ Partial Class frmRegAusencia
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(668, 50)
         Me.Panel2.TabIndex = 1
+        '
+        'btnGrabar
+        '
+        Me.btnGrabar.BackColor = System.Drawing.Color.GreenYellow
+        Me.btnGrabar.Location = New System.Drawing.Point(473, 15)
+        Me.btnGrabar.Name = "btnGrabar"
+        Me.btnGrabar.Size = New System.Drawing.Size(75, 23)
+        Me.btnGrabar.TabIndex = 1
+        Me.btnGrabar.Text = "&Grabar"
+        Me.btnGrabar.UseVisualStyleBackColor = False
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.BackColor = System.Drawing.Color.Salmon
+        Me.btnCerrar.Location = New System.Drawing.Point(568, 15)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCerrar.TabIndex = 0
+        Me.btnCerrar.Text = "&Cerrar"
+        Me.btnCerrar.UseVisualStyleBackColor = False
         '
         'Panel3
         '
@@ -189,26 +209,6 @@ Partial Class frmRegAusencia
         Me.dgvInacistencia.ReadOnly = True
         Me.dgvInacistencia.Size = New System.Drawing.Size(668, 149)
         Me.dgvInacistencia.TabIndex = 0
-        '
-        'btnCerrar
-        '
-        Me.btnCerrar.BackColor = System.Drawing.Color.Salmon
-        Me.btnCerrar.Location = New System.Drawing.Point(568, 15)
-        Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCerrar.TabIndex = 0
-        Me.btnCerrar.Text = "&Cerrar"
-        Me.btnCerrar.UseVisualStyleBackColor = False
-        '
-        'btnGrabar
-        '
-        Me.btnGrabar.BackColor = System.Drawing.Color.GreenYellow
-        Me.btnGrabar.Location = New System.Drawing.Point(473, 15)
-        Me.btnGrabar.Name = "btnGrabar"
-        Me.btnGrabar.Size = New System.Drawing.Size(75, 23)
-        Me.btnGrabar.TabIndex = 1
-        Me.btnGrabar.Text = "&Grabar"
-        Me.btnGrabar.UseVisualStyleBackColor = False
         '
         'frmRegAusencia
         '
